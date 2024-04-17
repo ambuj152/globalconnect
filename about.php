@@ -263,8 +263,12 @@ RIGHT SIDEBAR TOGGLE SECTION
 					<img class="wow fadeInUp animated" data-wow-delay=".5s" src="images/Global-Connect-SLIDEpng.png" alt="" />
 					<br>
                     <br>
+                   
                     <div class="row">
-                                                <div class= "col-md-8"><p class="wow fadeInUp animated" data-wow-delay=".5s"><br><b>Sports Travel:</b>
+                    <div class="col-md-4">
+                        <img src="images/sptravel.png"  alt="">
+                        </div>                          
+                    <div class= "col-md-8"><p class="wow animated" data-wow-delay=".5s"><br><b>Sports Travel:</b>
 
                                     Sports Travel: One of our unique segment and we are working very cosely with the most of Indiare
                                     badminton and para badminton players and some India Athletics providing them end to enc
@@ -280,14 +284,12 @@ RIGHT SIDEBAR TOGGLE SECTION
                         <br>
                         <b>sucess:</b>The Destination of Diligent Execution!</p>
                                                 </div>
-                     <div class="col-md-4">
-                        <img src="images/sporttravelpng.png"  alt="">
-                        </div>
+                     
                     </div>
                     <br>
 
                     <div class="row">
-                        <div class="col-md-4"><img src="images/main1.png" alt=""></div>
+                       
                         <div class="col-md-8">
                             <br>
                         <b>Corporate Travel:</b>
@@ -300,6 +302,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                                    <br><b> Global Destinations:</b> Explore a diverse array of destinations around the world, from vibrant urban centers to serene retreats, ensuring a refreshing and inspiring experience for your team.
                                     <br><b>Seamless Logistics: </b>Trust Global Connect to handle all aspects of your corporate travel, including airfare, accommodations, ground transportation, and on-site coordination, allowing you to focus on achieving your business objectives.
                         </div>
+                        <div class="col-md-4"><img src="images/cptravel.png" alt=""></div>
                     </div>
 
                     <div>

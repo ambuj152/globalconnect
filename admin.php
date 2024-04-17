@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<?php
+
+session_start(); 
+
+?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
@@ -73,6 +78,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
         <input type="password" name="password" placeholder="Password" required="required" />
 		<!-- <input type="hidden" name="id"> -->
         <button type="submit" name="submit" value="log-in" class="btn btn-primary btn-block btn-large">Let me in.</button>
+		<a href="dashboard.php">asdghghg</a>
     </form>
 </div>
 </body>
@@ -93,16 +99,15 @@ if(isset($_POST["submit"]))
 
 	if(mysqli_num_rows($query)>0)
 	{
-		 session_start();
+		 
 		 $result=mysqli_fetch_assoc($query);
-		 $_SESSION['id']=$result['id'];
-		 echo '<script>
-		 alert("done");
-		 window.location.href="dashboard.php";
-		  </script>';
+		$_SESSION['id']=$result['id'];
+		 echo "<script>
+		 alert('done');
+		 window.location.href='dashboard.php';
+		  </script>";
+		//echo mysqli_error($conn);
 		
-		 //  header('Location: dash.php');
-		 //window.location.href="dashboard.php"; 
 	} 
 	else{
 		echo "username and paswword not matched";

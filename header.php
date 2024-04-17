@@ -17,6 +17,7 @@
 								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a class="twitter facebook" href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a class="twitter google" href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="Enquiry.php"><button class="btn btn-warning" id="enquiry" style="color:#ffffff; font-weight:500 !important;">Enquiry</button></a></li>
 							</ul>
 						</div>
 						<div class="clearfix"> </div>
@@ -37,7 +38,9 @@
 							</button>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<center><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="@media(max-width: 600px){
+							width: 100%; float:right;
+						}">
 							<ul class="nav navbar-nav">
 								<li><a href="index.php" class="active">Home</a></li>
 								<li><a href="about.php">About</a></li>

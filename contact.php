@@ -250,7 +250,7 @@ include("header.php");
 
 			<div class="map wow fadeInUp animated" data-wow-delay=".5s">
 				<h4 style="color:#2B8ADD;">How to find us :</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.74416141058!2d77.28416237528928!3d28.63742887566201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb500553a01b%3A0x993c3bfd510aee26!2sV3S%20Mall!5e0!3m2!1sen!2sin!4v1712316270889!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=Street+number+9+,+block+B+,+phase+1,+shyam+vihar+phase+1,+Street+Number+9,+Block+B,+Shyam+Vihar+Phase-1,+Najafgarh,+Delhi,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<!---728x90--->
 			<div class="address">

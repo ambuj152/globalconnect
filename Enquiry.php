@@ -232,9 +232,167 @@ RIGHT SIDEBAR TOGGLE SECTION
     ?>
 	<!-- //header -->
 	
-	<!-- about -->
-	
-	<!-- //about -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+*{
+  margin: 0;
+  paddin: 0;
+  box-sizing: border-box;
+}
+
+.fa-house{
+  font-size: 48px;
+  color: red;
+}
+
+body{
+  color: #222;
+  font-family: "Montserrat";
+}
+
+.contact-box{
+      padding: 48px;
+    box-shadow: 0 0 30px rgb(46 71 93 / 12%);
+  max-width: 600px;
+  margin: 30px auto 30px;
+}
+
+.contact-box h2{
+  font-size: 20px;
+   font-weight: 700;
+  margin-bottom: 25px;
+  font-family: libre baskerville ,serif;
+  font-family: "Baskerville"
+}
+
+.input-group{
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.form-label{
+  margin-bottom: 7px;
+  display: inline-block;
+}
+
+.form-control{
+  border: 1px solid #f4f4f4;
+  border-radius: 4px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #f4f4f4;
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+}
+
+.form-control:focus{
+  border: 1px solid #122c91;
+  outline: none;
+}
+
+span.ast{
+  color: red;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+.btn-submit{
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border: none;
+    background-color: #122c91;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-submit:hover{
+  background: #0b5ed7;
+}
+
+#blue-box{
+  background: blue;
+  color: white;
+  padding: 15px;
+}
+
+#blue-box:hover{
+  background: red;
+  font-size: 24px;
+}
+
+.fa-gear{
+  font-size: 60px;
+  color: green;
+}
+
+.fa-solid{
+  font-size: 80px;
+}
+</style>
+
+  <div class="contact-box">
+  <h2 align="center">
+    GOT A QUESTION? SEND AN ENQUIRY
+  </h2>
+  <form>
+    <div class="input-group">
+      <label for="name" class="form-label">
+        Name <span class="ast">*</span>
+      </label>
+      <input class="form-control" placeholder="Write your name here..." name="name" type="text" id="name" required>
+    </div>
+    
+     <div class="input-group">
+      <label for="email" class="form-label">
+        Email <span class="ast">*</span>
+      </label>
+      <input class="form-control" placeholder="Your Email"name="email" type="email" required>
+     </div>
+    
+      <div class="input-group">
+        <label for="mobile" class="form-label">
+          Mobile Number <span class="ast">*</span>
+        </label>
+        <input class="form-control" placeholder="e.g. 9843779599" name="mobile" type="mobile" required>
+     </div>
+    
+      <div class="input-group">
+        <label for="alternate-number" class="form-label">
+          Alternate Number <span class="ast">*</span>
+        </label>
+        <input class="form-control" placeholder="Your Email" name="email" type="email" required id="alternate-number">
+     </div>
+    
+    <div class="input-group">
+      <textarea class="form-control" placeholder="Enter your text here"></textarea>
+    </div>
+
+    <button type="Submit" class="btn-submit">
+      Submit&nbsp;</i>
+    </button>
+  </form>
+</div>
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/b3bbdfc294.js" crossorigin="anonymous"></script>
 	<!---728x90--->
 	<!-- footer -->
 	<?php include("footer.php"); ?>

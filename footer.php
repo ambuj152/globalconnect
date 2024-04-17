@@ -4,39 +4,17 @@
 				<div class="col-md-3 footer-nav wow fadeInUp animated" data-wow-delay=".5s">
 					<h4 style="color:#F3A600 !important; ">Quick Links</h4>
 					<ul>
+					<li><a href="index.php"  style="color:#C2C2C2;">Home</a></li>
+
 						<li><a href="about.php"  style="color:#C2C2C2;">About</a></li>
 						
 						<li><a href="contact.html"  style="color:#C2C2C2;">Contact</a></li>
-						<li><a href="Enquiry.php"  ><button class="btn btn-warning" >Enquiry </button></a></li>
+						<li><a href="Enquiry.php"><button class="btn btn-warning">Enquiry </button></a></li>
 
 					</ul>
 				</div>
 
 
-				<!--the Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
 				
 				<div class="col-md-4 footer-nav wow fadeInDown animated" data-wow-delay=".5s">
 					<h4 style="color:#F3A600 !important;">Corporate Office </h4>

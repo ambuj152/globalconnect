@@ -275,7 +275,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 
 								<h3 class="wow fadeInDown animated" data-wow-delay=".5s" style="color: #FCBB00;">The Adventure Starts Today</h3>
 								<div class="more-button wow fadeInRight animated" data-wow-delay=".5s">
-									<a href="Enquiry.php" class="" data-toggle= "modal" data-target="#enquiryModal"><b> Enquiry</b></a>
+									<a href="Enquiry.php" class="enqq" ><b> Enquiry</b></a>
 								</div>
 							</div>
 						</li>
@@ -410,7 +410,7 @@ RIGHT SIDEBAR TOGGLE SECTION
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="images/341x245.png2aparna.png"
+                    <img src="images/testonomial/gopic chand.png"
                         alt="">
                 </div>
 				<br>
@@ -419,7 +419,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
 				
                 <div class="name">
-                    Aparna Popat
+                    Gopi Chand
                 </div>
             </div>
         </div>
@@ -438,10 +438,10 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
             </div>
         </div>
-        <!-- <div class="owl-item">
+        <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    <img src="images/testonomial/ashwani ponnapa.png"
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
@@ -449,14 +449,14 @@ RIGHT SIDEBAR TOGGLE SECTION
 					and flexible itinerary customization. Will definitely be back!"
                 </div>
                 <div class="name">
-                    Daniel Xavier
+                    Ashwani ponnapa
                 </div>
             </div>
-        </div> -->
+        </div> 
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="images/rohan.png"
+                    <img src="images/testonomial/gyatri gopichand.png"
                         alt="">
                 </div>
 				<br>
@@ -466,14 +466,14 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
 				
                 <div class="name">
-                    Rohan
+                Gyatri Gopichand
                 </div>
             </div>
         </div>
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="images/mahes bhupathi.png"
+                    <img src="images/testonomial/manisha ramadas.png"
                         alt="">
                 </div>
 				<br>
@@ -482,10 +482,81 @@ RIGHT SIDEBAR TOGGLE SECTION
                     Incredible sport tour! Safe, well-organized, unforgettable. Planning next trip
                 </div>
                 <div class="name">
-                    Mahesh Bhupathi
+                    Manisha Ramadas
                 </div>
             </div>
         </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="images/testonomial/phullela gopichand.png"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                Global Connect's expertise and warmth made our vacation a breeze. Thank you for the memories!""
+                </div>
+                <div class="name">
+                    Phullela Gopichand
+                </div>
+            </div>
+        </div> 
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="images/testonomial/srabani nandA.png"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+					Can't thank your team enough for the fantastic sport tour! Seamless booking, outstanding activities, 
+					and flexible itinerary customization. Will definitely be back!"
+                </div>
+                <div class="name">
+                    Srabani Nanda
+                </div>
+            </div>
+        </div> 
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="images/testonomial/tanish crasto.png"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                Global Connect made our trip unforgettable with their seamless organization and personalized care. Can't wait to book with them again!
+                </div>
+                <div class="name">
+                    Tanisha Crasto
+                </div>
+            </div>
+        </div> 
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="images/testonomial/thualsimathi murugesan.png"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                From start to finish, Global Connect provided top-notch service, ensuring every aspect of our trip was taken care of. Thank you for a fantastic experience!
+                </div>
+                <div class="name">
+                    Thualsimathi Murugesan
+                </div>
+            </div>
+        </div> 
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="images/testonomial/treesa jolly.png"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                Kudos to the team at Global Connect for their professionalism and expertise in crafting the perfect itinerary for our corporate retreat. Five stars!"
+                </div>
+                <div class="name">
+                    Threesa Jolly
+                </div>
+            </div>
+        </div> 
     </div></div>
 
 	<style>
@@ -666,13 +737,7 @@ body {
 
                         <!-- ENquiryform-->
 
-                     <center><div class="login">
-
-   
-
-
-</div>
-        </center>   
+                    
 
                 
 
@@ -701,11 +766,11 @@ body {
 	<!-- //popular -->
 	<!---728x90--->
 	<!-- footer -->
-	<?php include("footer.php"); ?>
+
+	<?php 
+    include("alumni.php");
+    include("footer.php"); ?>
 	</div>
 	<!-- //footer -->
 
 <script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'86ef9ca36b902a77',t:'MTcxMjIxNjAyNC4wNDgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../../../cdn-cgi/challenge-platform/h/g/scripts/jsd/dc6b543c1346/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>	
-
-<!-- Mirrored from p.w3layouts.com/demos/19-02-2016/around/web/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 07:34:05 GMT -->
-</html>

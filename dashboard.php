@@ -1,7 +1,7 @@
 <?php
-// session_start();
-// echo $_SESSION['id'];
-// if(isset($_SESSION['id'])) {
+ session_start();
+ echo $_SESSION['id'];
+ if(isset($_SESSION['id'])) {
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -326,11 +326,11 @@ th {
 
 </html>
 <?php
-// }
-// else{
-//   echo "please login to Continue";
-// //    header("Location:admin.php");
-// }
+}
+ else{
+  echo "please login to Continue";
+  header("Location:admin.php");
+ }
 ?>
 
 
