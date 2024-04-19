@@ -349,11 +349,12 @@ span.ast{
   <h2 align="center">
     GOT A QUESTION? SEND AN ENQUIRY
   </h2>
-  <form>
+  <form method="post">
     <div class="input-group">
       <label for="name" class="form-label">
         Name <span class="ast">*</span>
       </label>
+      <input type="hidden" name="id">
       <input class="form-control" placeholder="Write your name here..." name="name" type="text" id="name" required>
     </div>
     
@@ -375,16 +376,19 @@ span.ast{
         <label for="alternate-number" class="form-label">
           Alternate Number <span class="ast">*</span>
         </label>
-        <input class="form-control" placeholder="Your Email" name="email" type="email" required id="alternate-number">
+        <input class="form-control" placeholder="mobile" name="Alternate" type="text" required id="alternate-number">
      </div>
     
     <div class="input-group">
-      <textarea class="form-control" placeholder="Enter your text here"></textarea>
+    <label for="alternate-number" class="form-label">
+          Your Enquiry <span class="ast">*</span>
+        </label>
+      <textarea class="form-control" placeholder="Enter your text here" name="textarea"></textarea>
     </div>
 
-    <button type="Submit" class="btn-submit">
-      Submit&nbsp;</i>
-    </button>
+    <input type="Submit" class="btn-submit" name="submit">
+     
+    
   </form>
 </div>
 
@@ -402,3 +406,30 @@ span.ast{
 
 <!-- Mirrored from p.w3layouts.com/demos/19-02-2016/around/web/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 07:34:24 GMT -->
 </html>
+
+<?php 
+include("connection.php");
+
+if(isset($_POST['submit']))
+
+{
+$id= ($_POST["id"]);
+$name= ($_POST["name"]);
+$email=($_POST["email"]);
+$mobile=($_POST["mobile"]);
+$alternate=($_POST["Alternate"]);
+$textarea=($_POST["textarea"]);
+
+$enquiry="INSERT INTO `enquiry` (`id`,`name`,`email`,`mobile`,`Alternate`,`textarea`) VALUES('$id','$name','$email','$mobile','$alternate','$textarea')";
+$fire=mysqli_query($conn,$enquiry);
+
+if($fire){
+  echo "<script> alert('form submitted'); </script>";
+}
+else{
+  echo "<script> alert('failed');</script>";
+}
+
+
+}
+?>

@@ -289,8 +289,9 @@ th {
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>phone</th>
-                    <th>message</th>
+                    <th>Mobile</th>
+                    <th>Alternate</th>
+                    <th>Enquiry</th>
                     <th>Operation</th>
 
                 </tr>
@@ -298,7 +299,7 @@ th {
                     <tbody>
                     <?php
                     include("connection.php");
-                    $sql="SELECT * FROM `contact`";
+                    $sql="SELECT * FROM `enquiry`";
                     $result=mysqli_query($conn,$sql);
 
                     if(mysqli_num_rows($result)> 0)
@@ -309,10 +310,12 @@ th {
                             echo "<td>" . $row['id'] . "</td>";
                             echo "<td>" . $row['name'] . "</td>";
                             echo "<td>" . $row['email'] . "</td>";
-                            echo "<td>" . $row['phone'] . "</td>";
-                            echo "<td>" . $row['message'] . "</td>";  ?>
+                            echo "<td>" . $row['mobile'] . "</td>";
+                            echo "<td>" . $row['Alternate'] . "</td>";
+                            echo "<td>" . $row['textarea'] . "</td>";?>
                             <td><a href='?id=<?php echo $row['id']?>'> <button class="delete-btn">Delete</button> </a> &nbsp;
-                     <a href="?UDTId=<?php echo $row['id'] ?>"><button class="update">Update</button></a> </td> 
+                     <!-- <a href="?UDTId=<?php echo $row['id'] ?>"><button class="update">Update</button></a> -->
+                     </td> 
                     <?php                         
                            echo "</tr>";
 
@@ -330,7 +333,7 @@ th {
                 <?php
     if(isset($_GET['id'])){
         $id=$_GET['id'];
-        $sql="DELETE FROM `contact` WHERE `id`='$id'";
+        $sql="DELETE FROM `enquiry` WHERE `id`='$id'";
         $result=mysqli_query($conn,$sql);
         if($result>0)
         {
@@ -350,7 +353,7 @@ th {
     if(isset($_GET['UDTId']))
     {
         $id=$_GET['UDTId'];
-        $sql="SELECT * FROM `contact` WHERE `id`='$id'";
+        $sql="SELECT * FROM `enquiry` WHERE `id`='$id'";
         $result=mysqli_query($conn,$sql);
         $row=mysqli_fetch_assoc($result); ?>
 <style>

@@ -301,6 +301,7 @@ $fetch= mysqli_fetch_assoc($result);
 
 
 
+<h5>Image Size Must Be(1800 x 680)</h5><br>
 
 <form method="POST" action="" enctype="multipart/form-data">
     <div class="form-group">

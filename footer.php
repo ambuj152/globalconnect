@@ -10,6 +10,8 @@
 						
 						<li><a href="contact.html"  style="color:#C2C2C2;">Contact</a></li>
 						<li><a href="Enquiry.php"><button class="btn btn-warning">Enquiry </button></a></li>
+						<li><a href="admin.php"  style="color:#C2C2C2;">Admin</a></li>
+
 
 					</ul>
 				</div>

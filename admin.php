@@ -72,13 +72,14 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 </head>
 <body>
 <div class="login">
-	<h1>Login</h1>
+	
+	<h1>Global Connect Login</h1>
     <form action="#" method="post">
     	<input type="text" name="username" placeholder="Username" required="required" />
         <input type="password" name="password" placeholder="Password" required="required" />
 		<!-- <input type="hidden" name="id"> -->
         <button type="submit" name="submit" value="log-in" class="btn btn-primary btn-block btn-large">Let me in.</button>
-		<a href="dashboard.php">asdghghg</a>
+		<!-- <a href="dashboard.php">asdghghg</a> -->
     </form>
 </div>
 </body>
@@ -106,7 +107,7 @@ if(isset($_POST["submit"]))
 		 alert('done');
 		 window.location.href='dashboard.php';
 		  </script>";
-		//echo mysqli_error($conn);
+		echo mysqli_error($conn);
 		
 	} 
 	else{

@@ -229,50 +229,168 @@ th {
            ?>
 
             <!-- User Activity Starts from Here -->
-            <div class="card-header" style="text-align: center; background-color: lightgray;">
-    <h2 style="color: blue; margin-bottom: 10px;">Update the Gallery</h2>
-    <div class="card-body" style="padding: 20px;">
+            <style>
+        
+        .mainDiv {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+  }
+ .cardStyle {
+    width: 500px;
+    border-color: white;
+    background: #fff;
+    padding: 36px 0;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0px 0 2px 0 rgba(0,0,0,0.25);
+  }
+#signupLogo {
+  max-height: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.formTitle{
+  font-weight: 600;
+  margin-top: 20px;
+  color: #2F2D3B;
+  text-align: center;
+}
+.inputLabel {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+  .inputDiv {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+input {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  border: solid 1px #ccc;
+  padding: 0 11px;
+}
+input:disabled {
+  cursor: not-allowed;
+  border: solid 1px #eee;
+}
+.buttonWrapper {
+  margin-top: 40px;
+}
+  .submitButton {
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    display: block;
+    color: #fff;
+    background-color: #065492;
+    border-color: #065492;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+.submitButton:disabled,
+button[disabled] {
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  color: #666666;
+}
 
-        <table style="width: 100%; border-collapse: collapse; border: 1px solid black;">
-            <thead>
-                <tr style="background-color: gray; color: white;">
-                    <th style="padding: 10px; border: 1px solid black;">Serial No</th>
-                    <th style="padding: 10px; border: 1px solid black;">Image-name</th>
-                    <th style="padding: 10px; border: 1px solid black;">Image</th>
-                    <th style="padding: 10px; border: 1px solid black;">Operation</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php
-                        include("connection.php");
-                        $query = "SELECT * FROM `slider`";
-                        $result = mysqli_query($conn, $query);
-                        foreach ($result as $row) {
-                        ?>
-                <tr style="background-color: lightgray;">
-                    <th scope="row" style="padding: 10px; border: 1px solid black;">1</th>
-                    <td style="padding: 10px; border: 1px solid black;">Image-1</td>
-                    
-                    <td style="padding: 10px; border: 1px solid black; width: 30%;">
-                        
-                            <img style="border-radius: 10px; margin:1px; width: 100%;" src="<?php echo $row['filepath']; ?>" alt="Image">
-                        
-                    </td>
 
-                    <td style="padding: 10px; border: 1px solid black;">
-                        
-                        <a href="dashboard-upload.php?imgid=<?php echo $row['id']; ?>">
-                        <button type="button" style="padding: 10px 10px; background: blue; color: white; border: none; border-radius: 5px; cursor: pointer;">Update</button></a>
-                        <button type="button" style="padding: 10px 10px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">Delete</button>
-                    </td>
-                   
-                </tr>
-                 <?php } ?>
-            </tbody>
-        </table>
+    </style>
+  
+    <center><div class="col-sm-9">
+    <div class="mainDiv">
+  <div class="cardStyle">
+    <form action="" method="post" name="signupForm" id="signupForm">
+      
+<!--       <img src="" id="signupLogo"/> -->
+      
+      <h2 class="formTitle">
+        Change the Password
+      </h2>
+      
+       <div class="inputDiv">
+      <label class="inputLabel" for="oldpasword">Old Password</label>
+      <input type="password" id="oldpassword" name="oldpassword">
     </div>
+      
+      
+    <div class="inputDiv">
+      <label class="inputLabel" for="password">New Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+      
+    <input type="hidden" name="id"  value="<?php echo $_SESSION['id'];?>" >
+
+ <!--mandatary to pass id along with the form-->
+    <div class="inputDiv">
+      <label class="inputLabel" for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword">
+    </div>
+    
+    <div class="buttonWrapper">
+      <button type="submit" name="submit" id="submitButton" onclick="validateSignupForm()" class="submitButton pure-button pure-button-primary">
+        <span>Continue</span>
+        <span id="loader"></span>
+      </button>
+    </div>
+      
+  </form>
+  </div>
+</div>      
+</div></center>
+  </div>
 </div>
 
+</body>
+</html>
+
+<?php
+	include("connection.php");
+  
+  echo '.<br>';
+	if(isset($_POST["submit"])){
+
+		$oldpassword=$_POST['oldpassword'];
+		$newpassword=$_POST['confirmPassword'];
+        $id=$_POST["id"];
+
+	    $sql= "SELECT * FROM `gloabalconn` WHERE `id`='$id' AND `password`='$oldpassword'";
+		$result=mysqli_query($conn,$sql);  
+    
+
+		if(mysqli_num_rows($result)>0)
+		{ 
+        $sqll = "UPDATE `gloabalconn` SET password = '$newpassword' WHERE id = 1";
+        echo"";
+
+      if (mysqli_query($conn, $sqll)) {
+  
+          echo "<script>alert('Password updated successfully');</script>";
+      } else {
+          echo "Error updating password: " . mysqli_error($conn);
+      }
+		}
+		else{ 
+      echo" <script>alert('old password is not matched');</script>";
+    		}
+    echo '.<br>';
+   
+	}
+	?>
     </section>
 
 

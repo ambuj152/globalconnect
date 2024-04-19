@@ -9,6 +9,17 @@
     transition: all 0.3s;
     box-shadow: 10px 10px 10px rgba(227, 215, 215, 0.434);
 }
+@media(max-width:600px){
+    .navbar{
+        width: 300px;
+    padding-right:180px;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 10px 10px 10px rgba(227, 215, 215, 0.434);
+    }
+}
 
 .navbar.active {
     width: 0px;
@@ -21,6 +32,12 @@
     margin-bottom: 20px;
 }
 
+.center-nav{
+    width:200px;
+}
+.botton-nav{
+    width:300px
+}
 .center-nav,
 .bottom-nav {
     list-style: none;
@@ -71,13 +88,16 @@ hr {
             <img src="images/mainlogo.jpg" alt="">
             <ul class="center-nav">
                 <li><i class="fa-solid fa-house"></i><a href="dashboard.php"> Dashboard </a></li>
-                <li><i class="fa-solid fa-copy"></i><a href="#"> Content </a></li>
+                <li><i class="fa-solid fa-sliders"></i><a href="dashboard.php"> Slider </a></li>
+                <li><i class="fa  fa-address-card"></i><a href="dashboard-enquiry.php"> Contact </a></li>
+
+                <li><i class="fa fa-question-circle"></i><a href="enq-form.php"> Enquiry </a></li>
                
                
             </ul>
             <ul class="bottom-nav">
                 <hr>
-                <li><i class="fa-solid fa-gear"></i><a href="#"> Settings </a></li>
-                <li><i class="fa-solid fa-power-off"></i><a href="#"> Logout </a></li>
+                <li><i class="fa-solid fa-gear"></i><a href="dashboard-passwordchange.php"> Change Password </a></li>
+                <li><i class="fa-solid fa-power-off"></i><a href="logout.php"> Logout </a></li>
             </ul>
         </div>
