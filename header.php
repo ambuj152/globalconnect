@@ -44,7 +44,7 @@
 							<ul class="nav navbar-nav">
 								<li><a href="index.php" class="active">Home</a></li>
 								<li><a href="about.php">About</a></li>
-								<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
+								<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a class="hvr-bounce-to-bottom" href="#">Corporate Travel</a></li>
 										<li><a class="hvr-bounce-to-bottom" href="#">Sport Travel</a></li>          

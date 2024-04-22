@@ -268,9 +268,9 @@ RIGHT SIDEBAR TOGGLE SECTION
                     <div class="col-md-4">
                         <img src="images/sptravel.png"  alt="">
                         </div>                          
-                    <div class= "col-md-8"><p class="wow animated" data-wow-delay=".5s"><br><b>Sports Travel:</b>
+                    <div class= "col-md-8"><p class="wow animated" data-wow-delay=".5s" style="font-size:14px;text-align:justify;"><br><b>Sports Travel:</b>
 
-                                    Sports Travel: One of our unique segment and we are working very cosely with the most of Indiare
+                                    One of our unique segment and we are working very cosely with the most of Indiare
                                     badminton and para badminton players and some India Athletics providing them end to enc
                                     service like visa assistance, hotel booking, air tickets and other travel related services.
                                     We are first choice of them and it is proud to associated with players and foundations.
@@ -290,15 +290,15 @@ RIGHT SIDEBAR TOGGLE SECTION
 
                     <div class="row">
                        
-                        <div class="col-md-8">
+                        <div class="col-md-8" style="font-size:14px;text-align:justify;word-spacing: 3px;  ">
                             <br>
                         <b>Corporate Travel:</b>
 
                             Global Connect understands the importance of fostering collaboration, innovation, and productivity within corporate environments. 
                             That's why we offer comprehensive corporate travel solutions designed to enhance team dynamics, reward achievements, and achieve business objectives.
                             <br>
-                            Customized Retreats: From executive retreats to incentive trips and team-building excursions, our experienced team will tailor each itinerary to align with your company's goals, values, and budget.
-                                   <br> <b>Strategic Planning:</b> Partner with our dedicated event planners to design meticulously crafted agendas, incorporating business meetings, workshops, networking opportunities, and recreational activities.
+                                   <br> <b>Strategic Planning:</b> Partner with our dedicated event planners to design meticulously crafted agendas, 
+                                   incorporating business meetings, workshops, networking opportunities, and recreational activities.
                                    <br><b> Global Destinations:</b> Explore a diverse array of destinations around the world, from vibrant urban centers to serene retreats, ensuring a refreshing and inspiring experience for your team.
                                     <br><b>Seamless Logistics: </b>Trust Global Connect to handle all aspects of your corporate travel, including airfare, accommodations, ground transportation, and on-site coordination, allowing you to focus on achieving your business objectives.
                         </div>

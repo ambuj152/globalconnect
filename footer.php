@@ -23,10 +23,10 @@
 					<div class="news-grids">
 						<div class="news-grid" style="color:#C2C2C2;">
 							
-							Address: GROUND FLOOR, PLOT NO-6-A/1,
+								GROUND FLOOR, PLOT NO-6-A/1,
 								KH NO. 846 & 847, SHYAM VIHAR, PHASE-1,
-								B-BLOCK, NAJAFGARH, New Delhi, South
-								West Delhi, Delhi, 110043
+								B-BLOCK, NAJAFGARH, NEW DELHI, SOUTH
+								WEST DELHI, DELHI, 110043
 						</div>
 					</div>
 				</div>
