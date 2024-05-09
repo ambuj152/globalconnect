@@ -117,10 +117,10 @@ h1.heading {
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-12">
                         <div class="card">
-                            <a class="img-card" href="#">
-                            <img src="images/bhu1.jpg" />
+                            <a class="img-card" href="#" style="height: 630px;">
+                            <img src="images/malvi.png"  style="height:auto;"/>
                           </a>
                             <div class="card-content">
                                 <h4 class="card-title">
@@ -132,16 +132,16 @@ h1.heading {
                                 </p>
                             </div>
                             <div class="card-read-more">
-                                <a href="#" class="btn btn-link btn-block">
+                                <!-- <a href="#" class="btn btn-link btn-block">
                                     Read More
-                                </a>
+                                </a> -->
                             </div>
                         </div>
-                    </div>
+                    <!-- </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="card">
                             <a class="img-card" href="#">
-                            <img src="images/bhu2.jpg" />
+                            <img src="images/team1.png" />
                           </a>
                             <div class="card-content">
                                 <h4 class="card-title">
@@ -153,16 +153,14 @@ h1.heading {
                                 </p>
                             </div>
                             <div class="card-read-more">
-                                <a  class="btn btn-link btn-block">
-                                    Read More
-                                </a>
+                               
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
+                    </div> -->
+                    <!-- <div class="col-xs-12 col-sm-4">
                         <div class="card">
                             <a class="img-card" href="#">
-                            <img src="images/bhu3.jpg" />
+                            <img src="images/sptourrr.png" />
                           </a>
                             <div class="card-content">
                                 <h4 class="card-title">
@@ -174,12 +172,10 @@ h1.heading {
                                 </p>
                             </div>
                             <div class="card-read-more">
-                                <a href="#" class="btn btn-link btn-block">
-                                    Read More
-                                </a>
+                               
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

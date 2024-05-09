@@ -383,7 +383,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 
     <div class="testonomials">
 	<center><div class="card-body information-grid-info" style="width: 100%; background: #F3A600; line-height: 30px; padding: 10px;">
-  <h4 style="color: black;">Our Testinomials</h4>
+  <h4 style="color: black;">Our Customer</h4>
 	</div></center>
 	
 	<div style="padding: 50px;">
@@ -395,11 +395,13 @@ RIGHT SIDEBAR TOGGLE SECTION
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="images/parupal.png"
+                    <img src="images/Parupalli-Kashyap.webp"
                         alt="">
                 </div><br>
                 <div class=" para testimonial mt-4 mb-2" >
-                    <p style="fony-family:'Poppins', sans-serif;">Glad you enjoyed your sport tour! Can't wait to plan your next adventure with us!</p>
+                    <p style="fony-family:'Poppins', sans-serif;">
+                    <!-- Glad you enjoyed your sport tour! Can't wait to plan your next adventure with us! -->
+                </p>
                 </div>
 				
                 <div class="name">
@@ -415,7 +417,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
 				<br>
                 <div class="para testimonial mt-4 mb-2">
-                Unforgettable adventure: thrilling activities, top-notch service – a must for thrill-seekers!
+                <!-- Unforgettable adventure: thrilling activities, top-notch service – a must for thrill-seekers! -->
                 </div>
 				
                 <div class="name">
@@ -431,7 +433,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
 				<br>
                 <div class="para testimonial mt-4 mb-2">
-                Incredible cycling tour! Breathtaking routes, exceptional guides. Thanks for an amazing journey
+                <!-- Incredible cycling tour! Breathtaking routes, exceptional guides. Thanks for an amazing journey -->
                 </div>
                 <div class="name">
                     Saina Nehwal
@@ -445,8 +447,8 @@ RIGHT SIDEBAR TOGGLE SECTION
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
-					Can't thank your team enough for the fantastic sport tour! Seamless booking, outstanding activities, 
-					and flexible itinerary customization. Will definitely be back!"
+					<!-- Can't thank your team enough for the fantastic sport tour! Seamless booking, outstanding activities, 
+					and flexible itinerary customization. Will definitely be back!" -->
                 </div>
                 <div class="name">
                     Ashwani ponnapa
@@ -462,7 +464,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 				<br>
                 <div class="para testimonial mt-4 mb-2">
 				
-                    Sport tour was a blast! Can't wait for the next adventure!
+                    <!-- Sport tour was a blast! Can't wait for the next adventure! -->
                 </div>
 				
                 <div class="name">
@@ -470,7 +472,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
             </div>
         </div>
-        <div class="owl-item">
+        <!-- <div class="owl-item">
             <div class="card">
                 <div class="img-card">
                     <img src="images/testonomial/manisha ramadas.png"
@@ -479,13 +481,12 @@ RIGHT SIDEBAR TOGGLE SECTION
 				<br>
                 <div class="para testimonial mt-4 mb-2">
 					
-                    Incredible sport tour! Safe, well-organized, unforgettable. Planning next trip
                 </div>
                 <div class="name">
                     Manisha Ramadas
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
@@ -493,28 +494,27 @@ RIGHT SIDEBAR TOGGLE SECTION
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
-                Global Connect's expertise and warmth made our vacation a breeze. Thank you for the memories!""
+                <!-- Global Connect's expertise and warmth made our vacation a breeze. Thank you for the memories!"" -->
                 </div>
                 <div class="name">
                     Phullela Gopichand
                 </div>
             </div>
         </div> 
-        <div class="owl-item">
+        <!-- <div class="owl-item">
             <div class="card">
                 <div class="img-card">
                     <img src="images/testonomial/srabani nandA.png"
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
-					Can't thank your team enough for the fantastic sport tour! Seamless booking, outstanding activities, 
-					and flexible itinerary customization. Will definitely be back!"
+					
                 </div>
                 <div class="name">
                     Srabani Nanda
                 </div>
             </div>
-        </div> 
+        </div>  -->
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
@@ -522,7 +522,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
-                Global Connect made our trip unforgettable with their seamless organization and personalized care. Can't wait to book with them again!
+                <!-- Global Connect made our trip unforgettable with their seamless organization and personalized care. Can't wait to book with them again! -->
                 </div>
                 <div class="name">
                     Tanisha Crasto
@@ -536,7 +536,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
-                From start to finish, Global Connect provided top-notch service, ensuring every aspect of our trip was taken care of. Thank you for a fantastic experience!
+                <!-- From start to finish, Global Connect provided top-notch service, ensuring every aspect of our trip was taken care of. Thank you for a fantastic experience! -->
                 </div>
                 <div class="name">
                     Thualsimathi Murugesan
@@ -550,7 +550,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         alt="">
                 </div>
                 <div class="testimonial mt-4 mb-2">
-                Kudos to the team at Global Connect for their professionalism and expertise in crafting the perfect itinerary for our corporate retreat. Five stars!"
+                <!-- Kudos to the team at Global Connect for their professionalism and expertise in crafting the perfect itinerary for our corporate retreat. Five stars!" -->
                 </div>
                 <div class="name">
                     Threesa Jolly
