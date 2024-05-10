@@ -19,10 +19,11 @@ body {
 }
 
 .container-fostrap {
-  display: table-cell;
+  /* display: table-cell; */
   padding: 1em;
+  padding-top:none;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: top; */
 }
 .fostrap-logo {
   width: 100px;
@@ -66,15 +67,15 @@ h1.heading {
 .card:hover {
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.img-card {
+.img-cardc {
   width: 100%;
-  height:200px;
+  height: 630px;
   border-top-left-radius:2px;
   border-top-right-radius:2px;
   display:block;
     overflow: hidden;
 }
-.img-card img{
+.img-cardc img{
   width: 100%;
   height: 200px;
   object-fit:cover; 
@@ -102,10 +103,23 @@ h1.heading {
   font-weight:600;
   text-transform: uppercase
 }
+
+@media(max-width:600px)
+{
+  .img-cardc {
+    height: auto !important;
+  }
+}
+.img-car{
+
+
+  margin-top: 0px;
+}
+
 </style>
 
 
-<section class="wrapper">
+<section class="wrappe">
     <div class="container-fostrap">
         <div>
             <img src="images/alumni.png" class="fostrap-logo"/>
@@ -119,7 +133,7 @@ h1.heading {
                 <div class="row">
                     <div class="col-xs-12 col-sm-12">
                         <div class="card">
-                            <a class="img-card" href="#" style="height: 630px;">
+                            <a class="img-cardc" href="#" style="">
                             <img src="images/malvi.png"  style="height:auto;"/>
                           </a>
                             <div class="card-content">

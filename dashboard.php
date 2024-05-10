@@ -230,7 +230,7 @@ th {
 
             <!-- User Activity Starts from Here -->
             <div class="card-header" style="text-align: center; background-color: lightgray;">
-    <h2 style="color: blue; margin-bottom: 10px;">Update the Gallery</h2>
+    <h2 style="color: blue; margin-bottom: 10px;">Update the Slider</h2>
     <div class="card-body" style="padding: 20px;">
 
         <table style="width: 100%; border-collapse: collapse; border: 1px solid black;">
@@ -247,35 +247,70 @@ th {
                         include("connection.php");
                         $query = "SELECT * FROM `slider`";
                         $result = mysqli_query($conn, $query);
+
+                    
                         foreach ($result as $row) {
                         ?>
                 <tr style="background-color: lightgray;">
-                    <th scope="row" style="padding: 10px; border: 1px solid black;">1</th>
-                    <td style="padding: 10px; border: 1px solid black;">Image-1</td>
+                    <th scope="row" style="padding: 10px; border: 1px solid black;"><?php echo $row['id']?></th>
+                    <td style="padding: 10px; border: 1px solid black;"><?php echo $row['filenme']?></td>
                     
                     <td style="padding: 10px; border: 1px solid black; width: 30%;">
                         
-                            <img style="border-radius: 10px; margin:1px; width: 100%;" src="<?php echo $row['filepath']; ?>" alt="Image">
+                            <img style="border-radius: 10px; margin:1px; width: 50%;" src="<?php echo $row['filepath']; ?>" alt="Image">
                         
                     </td>
 
                     <td style="padding: 10px; border: 1px solid black;">
                         
-                        <a href="dashboard-upload.php?imgid=<?php echo $row['id']; ?>">
-                        <button type="button" style="padding: 10px 10px; background: blue; color: white; border: none; border-radius: 5px; cursor: pointer;">Update</button></a>
-                        <button type="button" style="padding: 10px 10px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">Delete</button>
+                        <a href="dashboard-upload.php?imgid=<?php echo $row['id'];?>">
+                        <button type="button" style="padding: 10px 10px;  background-color: #337ab7;
+                        border-color: #2e6da4; color: white; border: none; border-radius: 5px; cursor: pointer;">Update</button></a>
+
+
+                     <form method="post">   
+                        <input type="hidden" name="delete" value ="<?php echo $row['id']?>" >
+                        <button  type="submit" style="padding: 10px 10px; background-color: #d9534f;
+                        border-color: #d43f3a; color: white; border: none; border-radius: 5px; cursor: pointer;" name="deleteslider">Delete</button>
+                        </form>
                     </td>
                    
                 </tr>
-                 <?php } ?>
+                 <?php 
+                 }
+
+                 if($result)
+                 {
+                     $_SESSION['id']=$row=['id'];
+
+                 }
+                 else{
+                     
+                 }
+                //  session_start();
+             
+                 ?>
             </tbody>
         </table>
     </div>
+    
 </div>
+                        <center><a href="dashboard-insert.php"><button type="button" style="padding: 20px; margin:50px; width:50%; background-color: #337ab7;
+                        border-color: #2e6da4; color: white; border: none; border-radius: 5px; cursor: pointer;">INSERT SLIDER</button></a>
+                            </center>
 
     </section>
 
-
+<?php
+    include('connection.php');
+    if(isset($_POST['deleteslider'])){
+        
+         $id=$_SESSION['id'];
+           $deleteslid= "DELETE FROM `slider` WHERE `id`='$id'";
+           $qwe= mysqli_query($conn, $deleteslid);
+        }
+        
+?>
 <!--modal code-->
 <!-- Modal -->
     

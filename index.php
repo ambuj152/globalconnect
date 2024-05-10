@@ -83,7 +83,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 <body><link rel="stylesheet" href="assests/css/font-awesome.min.css">
 <!-- New toolbar-->
 <style>
-* {
+*{
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -229,81 +229,105 @@ RIGHT SIDEBAR TOGGLE SECTION
 	<!-- header -->
 	<?php
     include("header.php");
+
+
+  
     ?>
 	<!-- //header -->
 	<!-- banner -->
-    <?php
-    include("connection.php");
-    $query = "SELECT * FROM `slider`";
-    $result = mysqli_query($conn, $query);
-    foreach ($result as $row) {
-        ?>
-	<div class="banner" style="background-image: url('<?php echo $row['filepath']; ?>'); no-repeat 0px 0px;
-    background-size: cover;
-    padding: 10em 0 13em;">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+ 
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  
+  <div class="carousel-inner" role="listbox">
+  <?php
+
+    
+include('connection.php');
+
+// if(isset($_SESSION['id']))
+// {
+// $id=$_SESSION['id'];
+$query = "SELECT * FROM `slider`";
+$result = mysqli_query($conn, $query);
+
+
+$i=1;
+
+ foreach($result as $slid1)
+ {
+
+    if($i==1)
+    {
+        $active="active";
+?>
+    <div class="item active">
+    <div class="item">
+    <img src="<?php echo $slid1['filepath']; ?>" width="100%" height="auto" alt="Slide 2">
+    </div>
+    </div>
+
     <?php
     }
-    ?>
-			<div class="slider">
-				<!-- <h2 class="wow shake animated" data-wow-delay=".5s">Global Connect</h2> -->
-				<div class="border"></div>
-				<script src="js/responsiveslides.min.js"></script>
-				<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						// Slideshow 4
-							$("#slider3").responsiveSlides({
-								auto: true,
-								pager: true,
-								nav: true,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-									$('.events').append("<li>before event fired.</li>");
-								},
-								after: function () {
-									$('.events').append("<li>after event fired.</li>");
-								}
-							 });				
-						});
-				</script>
-				<div  id="top" class="callbacks_container-wrap">
-					<ul class="rslides" id="slider3">
-						<li>
-							<div class="slider-info" style="float: right; padding-right: 40px;">
-								<p class="wow fadeInUp animated" data-wow-delay=".5s" style=" font-size: 30px;  color:#181B4C;"><b>Elevate Your Game, Expand Your Reach</b></p>
+    else{
+    ?> 
+    
+    <div class="item">
+    <img src="<?php echo $slid1['filepath']; ?>" width="100%" height="auto" alt="Slide 2">
+    </div>
 
-								<h3 class="wow fadeInDown animated" data-wow-delay=".5s" style="color: #FCBB00;">The Adventure Starts Today</h3>
-								<div class="more-button wow fadeInRight animated" data-wow-delay=".5s">
-									<a href="Enquiry.php" class="enqq" ><b> Enquiry</b></a>
-								</div>
-							</div>
-						</li>
-						<!-- <li>
-							<div class="slider-info">
-								<h3>Consectetur adipiscing elit</h3>
-								<p>Quisque nisl risus, egestas in convallis vitae, fringilla cursus magna</p>
-								<div class="more-button">
-									<a href="single.html">Read More	</a>
-								</div>
-							</div>
-						</li> -->
-						<!-- <li>
-							<div class="slider-info">
-								<h3>Proin eget consequat ante	</h3>
-								<p> Suspendisse bibendum dictum metus, at finibus elit dignissim nec	</p>
-								<div class="more-button">
-									<a href="single.html">Click Here	</a>
-								</div>
-							</div>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-	</div>
+
+<?php
+    }
+    $i++;
+}
+    ?>
+
+    </div>
+  </div>
+
+   <!-- Left and right controls  -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+
+
+<style>
+    /* #flexing{
+       
+    } */
+    .banner-bottom{
+        margin-top:250px; 
+    }
+
+
+        @media(max-width:600px)
+       { 
+         .banner-bottom
+        {
+            margin-top:0 !important;
+        }
+    }
+</style>
+
 	<!-- //banner -->
 	<!-- banner-bottom -->
-	<div class="banner-bottom">
+	<div class="banner-bottom" id="flexxing" style="">
 		<div class="container">
 			<div class="banner-bottom-grids">
 				<div class="col-md-6 banner-bottom-left wow fadeInUp animated" data-wow-delay=".5s">
@@ -392,7 +416,7 @@ RIGHT SIDEBAR TOGGLE SECTION
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <div class="owl-carousel owl-theme mt-5">
-        <div class="owl-item">
+        <!-- <div class="owl-item">
             <div class="card">
                 <div class="img-card">
                     <img src="images/Parupalli-Kashyap.webp"
@@ -400,7 +424,6 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div><br>
                 <div class=" para testimonial mt-4 mb-2" >
                     <p style="fony-family:'Poppins', sans-serif;">
-                    <!-- Glad you enjoyed your sport tour! Can't wait to plan your next adventure with us! -->
                 </p>
                 </div>
 				
@@ -408,11 +431,11 @@ RIGHT SIDEBAR TOGGLE SECTION
                 Parupalli Kashyap
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="images/testonomial/gopic chand.png"
+                    <img src="images/testonomial/priyanshu rajwat.png"
                         alt="">
                 </div>
 				<br>
@@ -421,7 +444,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
 				
                 <div class="name">
-                    Gopi Chand
+                    Priyanshu Rajawat
                 </div>
             </div>
         </div>
@@ -458,7 +481,7 @@ RIGHT SIDEBAR TOGGLE SECTION
         <div class="owl-item">
             <div class="card">
                 <div class="img-card">
-                    <img src="images/testonomial/gyatri gopichand.png"
+                    <img src="images/testonomial/gyatriiiiii.png"
                         alt="">
                 </div>
 				<br>
@@ -684,10 +707,31 @@ body {
 	</center>
 	</div>
 	
-	<div class="popular">
+	<div class="popular" style="margin-bottom:0px">
 		<div class="">
 			
 			<div class="popular-slide">
+
+            <script src="js/responsiveslides.min.js"></script>
+				<!-- <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						// Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+									$('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+									$('.events').append("<li>after event fired.</li>");
+								}
+							 });				
+						});
+				</script> -->
 				<script>
 						// You can also use "$(window).load(function() {"
 						$(function () {

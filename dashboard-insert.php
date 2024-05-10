@@ -253,8 +253,8 @@ $fetch= mysqli_fetch_assoc($result);
 
 ?>
 
-<div class="card-body">
-<style>
+<!-- <div class="card-body"> -->
+<!-- <style>
     #content {
     margin: 20px auto;
     max-width: 400px;
@@ -296,24 +296,15 @@ $fetch= mysqli_fetch_assoc($result);
     background-color: #0056b3;
 }
 
-    </style>
+    </style> -->
 
 
 
-<h5>Image Size Must Be(1800 x 680)</h5><br>
-
-<form method="POST" action="" enctype="multipart/form-data">
-    <div class="form-group">
-        <img src="<?php echo $fetch['filepath'] ?>" alt="" width="40px"><br>
-        <br><input class="form-control" type="file" name="uploadfile" id="uploadfile" />
-        <input type="hidden" name="id" value="<?php echo $fetch['id']; ?>">
-        <input type="hidden" value="<?php echo $fetch['filepath']; ?>" name="old_image">
-    </div>
-   <div class="form-group">
-        <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
-   </div>
-</form>
-</div>
+    <h2>Upload a File</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload File" name="submit">
+    </form>
 <?php
 
 if(isset($_POST['upload'])){
@@ -328,7 +319,7 @@ $target_dir = "slider-img/";
  move_uploaded_file($_FILES["uploadfile"]["tmp_name"], $target_file);
 
 }
- $query = "UPDATE `slider` SET `filepath`=' $target_file' WHERE `id`= '$id'";
+    $query = "INSERT INTO `slider` (`id`, `filepath`) VALUES ('$id', '$target_file')";
 
 if(mysqli_query($conn,$query)) {
 
